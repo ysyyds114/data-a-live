@@ -34,7 +34,7 @@ jobs:
     # macos-14 configs are rejected outright). It ships Xcode 26 only, whose iig emits
     # IORPC.kernelContent; xnu/patches/0333-iokitcpp-kernel-content.patch adds that member
     # under #ifdef KERNEL so the DriverKit sources still compile on 8796.
-    runs-on: macos-26
+    runs-on: macos-15-intel
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
